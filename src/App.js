@@ -1,11 +1,16 @@
 import React, { Component } from 'react';
 
+import NavBar from "./components/common/NavBar.jsx";
+
+import LandingPage from './pages/LandingPage.jsx';
+
 class App extends Component {
     render() {
         return (
             <div>
-                <h1>OrthoTecs Demo</h1>
-                <button>HERE</button>
+                <NavBar />
+                <LandingPage />
+                {/* <h1>OrthoTecs Demo</h1> */}
             </div>
         );
     }

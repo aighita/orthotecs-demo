@@ -16,3 +16,6 @@ Command history:
         react-scripts is easier to setup but not flexible, zero configuration
 
         npm i react-scrips
+
+    4. Styles SCSS
+        npm install sass sass-loader style-loader css-loader --save-dev

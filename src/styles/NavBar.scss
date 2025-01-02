@@ -1,0 +1,223 @@
+#nav-bar {
+    font-family: Arial, sans-serif;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+
+    /* Stretch divs to the edges but center the content */
+    > div {
+        width: 100%; /* Full width */
+    }
+
+    .logo-search-login,
+    .links-contact,
+    .products {
+        display: flex;
+        justify-content: center;
+        background-color: #ffffff; /* Background color for each section */
+    }
+
+    /* Shared style for centering inner content */
+    .container-logo-search-login {
+        max-width: 1300px; /* Limit the content width */
+        width: 100%; /* Allow it to stretch within parent */
+        padding: 0 20px; /* Padding for spacing */
+        display: flex;
+        justify-content: space-between; /* Space items within the section */
+        align-items: center;
+    }
+
+    .container-links-contact {
+        max-width: 1050px;
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-search-login {
+        border-bottom: 2px solid #002F5D;
+        height: 80px;
+
+        .container-logo-search-login {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .logo {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+
+                img {
+                    height: 40px;
+                    margin-right: 10px;
+                }
+
+                div {
+                    display: flex;
+
+                    h1 {
+                        font-size: 33px;
+                        color: #1B3B56;
+                        margin: 0;
+                    }
+
+                    .h1-orange {
+                        color: #D57F47;
+                    }
+                }                
+            }
+
+            form {
+                display: flex;
+                align-items: center;
+                position: relative; /* Make the parent relative for icon positioning */
+            
+                .search-input {
+                    height: 40px;
+                    padding: 5px 40px 5px 20px; /* Add padding to the right for the icon */
+                    border: 1px solid #000000;
+                    border-radius: 50px;
+                    width: 400px;
+            
+                    &:focus {
+                        border-color: #002F5D; /* Change border color on focus */
+                        outline: none; /* Remove the default outline */
+                        box-shadow: 0 0 5px rgba(0, 47, 93, 0.2); /* Optional: Add a glow effect */
+                    }
+                }
+            
+                button {
+                    position: absolute; /* Position the button inside the input */
+                    right: 10px; /* Space from the right edge of the input */
+                    top: 50%; /* Center vertically */
+                    transform: translateY(-50%); /* Adjust for perfect vertical centering */
+                    background: none;
+                    border: none;
+                    cursor: pointer;
+                    color: #333; /* Icon color */
+                    font-size: 18px; /* Adjust icon size */
+            
+                    &:hover {
+                        color: #002F5D; /* Change color on hover */
+                    }
+            
+                    svg {
+                        height: 20px;
+                        width: 20px; /* Size of the FontAwesome icon */
+                    }
+                }
+            }            
+
+            .log-in {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    height: 40px;
+                    margin-right: 5px;
+                }
+
+                .anchors {
+                    display: flex;
+                    flex-direction: column;
+
+                    a {
+                        color: #002F5D;
+                        text-decoration: none;
+                        margin: 5px 0;
+                        font-weight: bold;
+                        font-size: 15px;
+
+                        &:hover {
+                            text-decoration: none;
+                            // background-color: red;
+                            // font-size: 16px;
+                        }
+                    }
+
+                    .login {
+                        font-size: 18.5px;
+                    }
+
+                    .signup {
+                        color: #D57F47;
+                    }
+                }
+            }
+        }
+    }
+
+    .links-contact {
+        background-color: #1B3B56;
+        height: 60px;
+
+        .container-links-contact {
+            .links-bar {
+                list-style: none;
+                display: flex;
+                margin: 0;
+                padding: 0;
+
+                li {
+                    margin: 0 15px;
+
+                    a {
+                        color: #ffffff;
+                        text-decoration: none;
+                        font-size: 16px;
+
+                        &:hover {
+                            // text-decoration: underline;
+                            color: #D57F47;
+                        }
+                    }
+                }
+            }
+
+            button {
+                background-color: #D57F47;
+                color: #ffffff;
+                border: none;
+                padding: 10px 15px;
+                border-radius: 50px;
+                cursor: pointer;
+                width: 175px;
+                height: 40px;
+                font-size: 17px;
+
+                &:hover {
+                    background-color: #D85C30;
+                }
+            }
+        }
+    }
+
+    .products {
+        background-color: #cccccc;
+        height: 45px;
+        justify-content: space-around;
+        
+        a {
+            color: #333;
+            text-decoration: none;
+            font-size: 17px;
+            padding: 5px 10px;
+            width: 25vw;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            text-align: center;
+
+            &:hover {
+                background-color: #bbbbbb;
+                border-radius: 5px;
+            }
+        }
+    }
+}
