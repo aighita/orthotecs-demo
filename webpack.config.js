@@ -1,29 +1,31 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/, // Handle JS and JSX files
+        test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader'],
       },
       {
-        test: /\.scss$/, // Handle SCSS files
+        test: /\.scss$/,
         use: [
-          'style-loader', // Inject styles into DOM
-          'css-loader',   // Turn CSS into CommonJS
-          'sass-loader',  // Compile SCSS to CSS
+          'style-loader',
+          'css-loader',
+          'sass-loader',
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg)$/i, // Handle image files
+        test: /\.(png|jpe?g|gif|svg)$/i,
         type: 'asset/resource',
       },
     ],
@@ -32,12 +34,20 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './public/index.html',
     }),
+    new webpack.DefinePlugin({
+      'process.env': {
+        'PUBLIC_URL': JSON.stringify('/'),
+        'NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+      }
+    })
   ],
   resolve: {
-    extensions: ['.js', '.jsx'], // Resolve JS and JSX extensions
+    extensions: ['.js', '.jsx'],
   },
   devServer: {
-    static: './dist', // Serve files from the dist folder
-    hot: true,        // Enable hot module replacement
+    static: {
+      directory: path.join(__dirname, 'public')  // Update this
+    },
+    hot: true,
   },
 };
