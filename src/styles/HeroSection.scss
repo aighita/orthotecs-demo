@@ -1,26 +1,29 @@
 #hero-section {
-    // background-image: url('/assets/images/hero-section-background.png'); /* Add your background image path */
+    // background-image: url('/assets/images/hero-section-background.png');
     background-color: white;
     background-size: cover;
     background-position: center;
     color: #333;
+    height: 330px;
+    margin-top: 35px;
+    margin-bottom: -70px;
 
     .content-container {
-        max-width: 1600px;
+        max-width: 1500px;
         width: 100%;
-
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between; /* Space evenly between the two sections */
         align-items: center;
-        padding: 50px;
+        margin: 0 auto; /* Center the container on the page */
+        padding: 0 50px; /* Add padding on left and right for spacing */
 
         .motto-action-button {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            max-width: 50%;
+            max-width: 40%; /* Adjust width for balance */
             color: #1B3B56;
-    
+
             h3 {
                 font-size: 18px;
                 font-weight: bold;
@@ -30,18 +33,17 @@
                 letter-spacing: 1px;
                 margin-bottom: -20px;
             }
-    
+
             h1 {
                 font-size: 48px;
                 font-weight: bold;
                 line-height: 1.2;
-                // margin-bottom: 20px;
-    
+
                 br {
                     display: none; /* Adjust for mobile if needed */
                 }
             }
-    
+
             button {
                 background-color: #D57F47;
                 color: #ffffff;
@@ -52,55 +54,58 @@
                 cursor: pointer;
                 font-weight: bold;
                 max-width: 250px;
-    
+
                 &:hover {
                     background-color: #D85C30;
                 }
             }
         }
-    
+
         .become-a-customer {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            align-items: flex-end;
+            justify-content: right;
             background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
             padding: 20px;
             border-radius: 15px;
-            max-width: 40%;
-    
+            max-width: 40%; /* Same width as motto section */
+            margin-left: auto; /* Push form to the far right */
+
             h3 {
-                font-size: 18px;
+                font-size: 25px;
                 font-weight: bold;
                 color: #1B3B56;
                 margin-bottom: 15px;
             }
-    
+
             form {
                 display: flex;
                 align-items: center;
-
                 width: 100%;
-    
+
                 .email-input {
                     flex-grow: 1;
                     height: 25px;
                     width: 300px;
                     padding: 10px 15px;
-                    border: 1px solid #ccc;
+                    border: 1px solid #D57F47;
                     border-radius: 50px 0 0 50px; /* Rounded on the left */
                     outline: none;
                     font-size: 14px;
-    
+                    background-color: #D57F47;
+                    
+
                     &:focus {
                         border-color: #D57F47;
                         box-shadow: 0 0 5px rgba(213, 127, 71, 0.3);
                     }
-    
+
                     &::placeholder {
-                        color: #aaa;
+                        color: white;
                     }
                 }
-    
+
                 button {
                     background-color: #D57F47;
                     color: #ffffff;
@@ -111,11 +116,12 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-    
+                    height: 47px;
+
                     svg {
                         font-size: 16px;
                     }
-    
+
                     &:hover {
                         background-color: #D85C30;
                     }
