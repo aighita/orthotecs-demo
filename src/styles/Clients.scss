@@ -1,0 +1,40 @@
+.clients-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+}
+
+.clients-header {
+    text-align: center;
+    line-height: 10px;
+    margin-bottom: 20px;
+
+    h3 {
+        color: #D57F47;
+        font-size: 1rem;
+    }
+
+    h1 {
+        color: #1B3B56;
+        font-size: 2rem;
+    }
+}
+
+.clients-logos {
+    display: flex;
+    justify-content: center;
+    gap: 20px; 
+    flex-wrap: wrap;
+
+    img {
+        max-width: 330px; 
+        height: auto;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05); // Slight zoom on hover
+        }
+    }
+}
