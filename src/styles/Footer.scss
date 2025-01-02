@@ -1,0 +1,108 @@
+.footer-container {
+    background-color: #1B3B56;
+    ;
+    color: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    max-width: 80vw;
+    width: 100%;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    text-align: left;
+  
+
+    h1 {
+        color: #faf6f2;
+        font-size: 3rem;
+        line-height: 1;
+        margin-top: 10px;
+    }
+    h3 {
+        font-size: 1.6rem;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin: 5px 0;
+
+            a {
+                color: #ffffff;
+                text-decoration: none;
+                font-size: 1rem;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
+            background-color: #D57F47;
+            font-size: 1.2rem;
+            color:#1B3B56;
+        }
+
+        button {
+            padding:  13.4px 40px;
+            background-color: #D57F47;
+            color:#1B3B56;
+            border: none;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: #f38720;
+            }
+        }
+    }
+}
+
+.footer-lower {
+    text-align: left;
+    //border-top: 1px solid #ffffff;
+    padding-top: 10px;
+    max-width: 80vw;
+    width: 100%;
+    .social-icons {
+        margin-top: 10px;
+
+        a {
+            margin: 0 10px;
+            color: #ffffff;
+            font-size: 20px;
+
+            &:hover {
+                color: #f3a261;
+            }
+        }
+    }
+}
+
+
