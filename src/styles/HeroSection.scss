@@ -5,8 +5,8 @@
     background-position: center;
     color: #333;
     height: 330px;
-    margin-top: 35px;
-    margin-bottom: -70px;
+    // margin-top: 35px;
+    // margin-bottom: -70px;
 
     .content-container {
         max-width: 1500px;
@@ -15,7 +15,8 @@
         justify-content: space-between; /* Space evenly between the two sections */
         align-items: center;
         margin: 0 auto; /* Center the container on the page */
-        padding: 0 50px; /* Add padding on left and right for spacing */
+        padding: 0 0px; /* Add padding on left and right for spacing */
+        padding-top: 45px;
 
         .motto-action-button {
             display: flex;
@@ -66,7 +67,7 @@
             flex-direction: column;
             align-items: flex-end;
             justify-content: right;
-            background-color: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+            background-color: rgba(255, 255, 255, 0.0); /* Slightly transparent background */
             padding: 20px;
             border-radius: 15px;
             max-width: 40%; /* Same width as motto section */

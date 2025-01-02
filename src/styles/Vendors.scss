@@ -1,0 +1,99 @@
+#vendors {
+    padding: 50px 20px;
+    background-color: #ffffff;
+    text-align: center;
+
+    .text {
+        margin-bottom: 30px;
+
+        h3 {
+            font-size: 1vw;
+            font-weight: bold;
+            color: #D57F47;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-size: 2.5vw;
+            font-weight: bold;
+            color: #1B3B56;
+            margin: 0;
+        }
+    }
+
+    .distributors {
+        // max-width: 1500px;
+        // width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+
+        .row-1,
+        .row-2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+
+            img {
+                width: 15vw;
+                height: 15vw;
+                object-fit: contain;
+                // filter: grayscale(100%); /* Makes the logos grayscale */
+                transition: filter 0.3s ease;
+                background-color: rgba(255, 255, 255, 1);
+
+                &:hover {
+                    filter: grayscale(1); /* Restores color on hover */
+                }
+            }
+        }
+
+        .row-1 {
+            .become-partner {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                background-color: #1B3B56;
+                border: 0px solid #ccc;
+                border-radius: 0px;
+                text-align: center;
+                width: 15vw;
+                height: 15vw; /* Set the height to match the width */
+                max-width: 15vw;
+                max-height: 15vw; /* Ensure max height matches max width */
+                box-sizing: border-box; /* Include padding and border in the size */
+
+                p {
+                    font-size: 1.2vw;
+                    color: #ffffff;
+                    margin-bottom: 15px;
+                }
+
+                button {
+                    background-color: #D57F47;
+                    color: #ffffff;
+                    border: none;
+                    padding: 10px 20px;
+                    border-radius: 50px;
+                    font-size: 1vw;
+                    font-weight: bold;
+                    cursor: pointer;
+                    transition: background-color 0.3s ease;
+
+                    width: 270px;
+                    height: 50px;
+
+                    &:hover {
+                        background-color: #D85C30;
+                    }
+                }
+            }
+        }
+    }
+}
