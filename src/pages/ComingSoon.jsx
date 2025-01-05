@@ -22,7 +22,7 @@ const ComingSoon = () => {
                 aria-label="Background video"
             >
                 <source
-                    src="/assets/videos/coming-soon-background-video.mp4"
+                    src="/assets/videos/coming-soon-background-video.webm"
                     type="video/webm"
                 />
                 Your browser does not support the video tag.
