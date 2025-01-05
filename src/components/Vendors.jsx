@@ -14,7 +14,7 @@ const Vendors = () => {
             <div className="distributors">
                 <div className='row-1'>
                     <div className="become-partner">
-                        <p>Start to sell your products <br></br> with the help of OrthoTecs</p>
+                        <p>Start to sell your products<br></br>with the help of OrthoTecs</p>
                         <button>Become a partner</button>
                     </div>
                     <img src="/assets/images/vendors/brand5.png" />

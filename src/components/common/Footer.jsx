@@ -8,7 +8,10 @@ const Footer = () => {
         <div className="footer-container">
             <div className="footer-content">
                 <div className="footer-section">
-                    <h1>ORTHOTECS</h1>
+                    <h1>
+                        <span style={{color: "#3c7eb4"}}>ORTHO</span>
+                        <span style={{color: "#D57F47"}}>TECS</span>
+                    </h1>
                     <p>Leading the Way in Orthotics <br></br> Excellence <br></br> Care for the quality of life.</p> 
                 </div>
                 <div className="footer-section">

@@ -1,4 +1,6 @@
 /* Reset default margins and paddings */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -6,3 +8,10 @@ html, body {
     overflow-x: hidden; /* Prevent horizontal scrolling */
     background-color: white;
 }
+body {
+    font-family: "Montserrat", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

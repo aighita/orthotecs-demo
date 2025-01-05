@@ -24,31 +24,28 @@
     }
 
     .distributors {
-        // max-width: 1500px;
-        // width: 100%;
-
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 0px;
+        gap: 20px;
 
         .row-1,
         .row-2 {
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 0px;
+            gap: 20px;
 
             img {
-                width: 15vw;
-                height: 15vw;
+                width: 18vw; /* Set width for a rectangular shape */
+                height: 12vw; /* Set height to make it rectangular */
                 object-fit: contain;
-                // filter: grayscale(100%); /* Makes the logos grayscale */
-                transition: filter 0.3s ease;
                 background-color: rgba(255, 255, 255, 1);
+                transition: filter 0.3s ease;
+                border-radius: 8px; /* Optional: to soften the edges */
 
                 &:hover {
-                    filter: grayscale(1); /* Restores color on hover */
+                    filter: grayscale(1); /* Grayscale effect on hover */
                 }
             }
         }
@@ -58,16 +55,17 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: center;
+                align-items: flex-start;
                 background-color: #1B3B56;
                 border: 0px solid #ccc;
-                border-radius: 0px;
+                border-radius: 8px;
                 text-align: center;
-                width: 15vw;
-                height: 15vw; /* Set the height to match the width */
-                max-width: 15vw;
-                max-height: 15vw; /* Ensure max height matches max width */
-                box-sizing: border-box; /* Include padding and border in the size */
+                width: 25vw; /* Adjust width for rectangular design */
+                height: 11vw; /* Increase height for rectangular shape */
+                max-width: 18vw; /* Max width to maintain responsiveness */
+                max-height: 18vw; /* Max height to maintain responsiveness */
+                box-sizing: border-box; /* Include padding and border in size */
+                padding: 20px; /* Add padding for spacing inside the box */
 
                 p {
                     font-size: 1.2vw;
@@ -79,15 +77,15 @@
                     background-color: #D57F47;
                     color: #ffffff;
                     border: none;
-                    padding: 10px 20px;
-                    border-radius: 50px;
+                    padding: 12px 23px;
+                    border-radius: 20px;
                     font-size: 1vw;
                     font-weight: bold;
                     cursor: pointer;
                     transition: background-color 0.3s ease;
-
-                    width: 270px;
-                    height: 50px;
+                    margin-left: 47px;
+                    width: auto;
+                    height: auto;
 
                     &:hover {
                         background-color: #D85C30;

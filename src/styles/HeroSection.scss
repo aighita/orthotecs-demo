@@ -91,7 +91,7 @@
                     width: 300px;
                     padding: 10px 15px;
                     border: 1px solid #D57F47;
-                    border-radius: 50px 0 0 50px; /* Rounded on the left */
+                    border-radius: 8px 0 0 8px; /* Rounded on the left */
                     outline: none;
                     font-size: 14px;
                     background-color: #D57F47;
@@ -112,7 +112,7 @@
                     color: #ffffff;
                     border: none;
                     padding: 10px 15px;
-                    border-radius: 0 50px 50px 0; /* Rounded on the right */
+                    border-radius: 0 8px 8px 0; /* Rounded on the right */
                     cursor: pointer;
                     display: flex;
                     align-items: center;
