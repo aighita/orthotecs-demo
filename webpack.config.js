@@ -40,7 +40,7 @@ module.exports = {
       template: './public/index.html',
     }),
     new webpack.DefinePlugin({
-      'process.env.NODE_ENV': JSON.stringify('production'),
+      'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development'),
     }),
 
     // IMPORTANT: This rule will copy the assets folder to build/production so

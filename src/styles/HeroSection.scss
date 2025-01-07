@@ -4,19 +4,19 @@
     background-size: cover;
     background-position: center;
     color: #333;
-    height: 330px;
+    height: 18vw;
     // margin-top: 35px;
     // margin-bottom: -70px;
 
     .content-container {
-        max-width: 1500px;
+        max-width: 78.125vw;
         width: 100%;
         display: flex;
         justify-content: space-between; /* Space evenly between the two sections */
         align-items: center;
         margin: 0 auto; /* Center the container on the page */
         padding: 0 0px; /* Add padding on left and right for spacing */
-        padding-top: 45px;
+        padding-top: 2.34375vw;
 
         .motto-action-button {
             display: flex;
@@ -26,7 +26,7 @@
             color: #1B3B56;
 
             h3 {
-                font-size: 18px;
+                font-size: 0.9375vw;
                 font-weight: bold;
                 color: #D57F47;
                 margin-bottom: 10px;
@@ -36,7 +36,7 @@
             }
 
             h1 {
-                font-size: 48px;
+                font-size: 2.5vw;
                 font-weight: bold;
                 line-height: 1.2;
 
@@ -51,10 +51,10 @@
                 border: none;
                 padding: 15px 30px;
                 border-radius: 50px;
-                font-size: 16px;
+                font-size: 0.83vw;
                 cursor: pointer;
                 font-weight: bold;
-                max-width: 250px;
+                max-width: 13vw;
 
                 &:hover {
                     background-color: #D85C30;
@@ -74,7 +74,7 @@
             margin-left: auto; /* Push form to the far right */
 
             h3 {
-                font-size: 25px;
+                font-size: 1.3vw;
                 font-weight: bold;
                 color: #1B3B56;
                 margin-bottom: 15px;
@@ -87,8 +87,8 @@
 
                 .email-input {
                     flex-grow: 1;
-                    height: 25px;
-                    width: 300px;
+                    height: 1.3vw;
+                    width: 15.6vw;
                     padding: 10px 15px;
                     border: 1px solid #D57F47;
                     border-radius: 8px 0 0 8px; /* Rounded on the left */
@@ -117,10 +117,10 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    height: 47px;
+                    height: 1.3vw;
 
                     svg {
-                        font-size: 16px;
+                        font-size: 0.83vw;
                     }
 
                     &:hover {
