@@ -1,93 +1,138 @@
-.contact-container {
-    background-color: #ffffff;
+#contact {
+    /* Background styling. 
+       You can move this from your React inline style if desired. */
+    // background-image: url("/assets/images/contact-us-background.png");
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    width: 100%; 
-    max-width: 3200px;
-    height: 200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative; // To manage the relative positioning of child elements
-
-}
-
-.contact-banner {
-    flex: 1;
-    padding: 10px;
-    margin: 10px;
-    margin-top: -40px;
-    position: relative; // To ensure proper layering
-    z-index: 1; // Keep it behind the form when they overlap
-    max-width: 1500px;
-    max-height: 700px;
-    display: flex; // Enable flexbox
-    flex-direction: column; // Stack elements vertically
-    justify-content: center; // Center vertically
-    align-items: center; // Center horizontally
-    text-align: center; // Center-align text within the container
-
-    h2 {
-        color: #d57f47;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    p {
-        color: #1b3b56;
-        font-size: 1.2rem;
-        line-height: 1.5;
-        margin: 0;
-        text-align: left;
-    }
-}
-
-
-.contact-form {
-    flex: 1;
-    background-color: #1B3B56;
-    padding: 40px; // Increase padding for height
-    border-radius: 8px;
-    z-index: 2; // Ensure it overlaps the banner
-    margin-top: -50px;
-    margin-right: 400px;
-     // Negative margin to overlap the banner section
-    position: relative;
-    max-width: 500px;
-
-    form {
-        display: flex;
+    min-height: 100vh;
+    /* Optional: If you prefer 90vh for the hero section, keep it that way. */
+    /* height: 90vh; */
+    padding: 0 0px 0 0px;
+  
+    .contact-container {
+      /* Center the content and define a responsive width */
+      width: 100vw;
+      height: 15vw;
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      align-items: center; // or center
+      padding: 2vw;
+      background-color: #fff;
+  
+      /* For smaller screens, stack the banner & form vertically */
+      @media (max-width: 768px) {
         flex-direction: column;
-
-        input,
-        textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: none;
-            font-size: 1rem;
-            color: #ffffff;
-            background-color: #1B3B56;
+        align-items: center;
+        width: 90vw;
+      }
+  
+      .contact-banner {
+        /* White, rounded rectangle for the banner on the left */
+        // background-color: #fff;
+        border-radius: 1vw;
+        padding: 3vw;
+        width: 45vw;
+        // box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+  
+        @media (max-width: 768px) {
+          width: 90vw;
+          margin-bottom: 3vw;
         }
-
-        textarea {
-            resize: none;
+  
+        h2 {
+          /* Orange heading */
+          color: #D57F47;
+          font-size: 3vw;
+          margin-bottom: 1vw;
+  
+          @media (max-width: 768px) {
+            font-size: 6vw;
+          }
         }
-
-        button {
-            padding: 10px;
+  
+        p {
+          color: #333;
+          font-size: 1.2vw;
+          line-height: 1.8vw;
+  
+          @media (max-width: 768px) {
+            font-size: 3.5vw;
+            line-height: 5vw;
+          }
+        }
+      }
+  
+      .contact-form {
+        /* Navy/blue, rounded rectangle for the form */
+        background-color: #1B3B56;
+        border-radius: 1vw;
+        padding: 1.7vw;
+        width: 35vw;
+        box-shadow: 0 0.5vw 1vw rgba(0, 0, 0, 0.1);
+  
+        @media (max-width: 768px) {
+          width: 90vw;
+        }
+  
+        form {
+          display: flex;
+          flex-direction: column;
+  
+          /* Common styles for inputs and textarea */
+          input,
+          textarea {
+            background-color: transparent;
             border: none;
-            border-radius: 4px;
-            background-color: #d57f47;
-            color: #ffffff;
-            font-size: 1.2rem;
+            /* This creates the orange “underline” */
+            border-bottom: 0.2vw solid #D57F47;
+            color: #fff;
+            font-size: 1vw;
+            margin-bottom: 2vw;
+            padding: 0.5vw 0;
+  
+            @media (max-width: 768px) {
+              font-size: 3vw;
+              margin-bottom: 5vw;
+            }
+  
+            /* If you want placeholders white too: */
+            &::placeholder {
+              color: #eaeaea;
+            }
+  
+            &:focus {
+              outline: none;
+              border-bottom-color: #D57F47; // slightly different shade if you like
+            }
+          }
+  
+          button {
+            /* Orange button with black text */
+            background-color: #D57F47; 
+            color: #fff;
+            border: none;
+            border-radius: 0.5vw;
+            font-size: 1vw;
+            padding: 1vw;
             cursor: pointer;
             transition: background-color 0.3s ease;
-
-            &:hover {
-                background-color: #f38720;
+            margin-top: 2vw;
+  
+            @media (max-width: 768px) {
+              font-size: 3vw;
+              padding: 3vw;
             }
+  
+            &:hover {
+              background-color: #ff8733; // a lighter or darker orange shade
+            }
+          }
         }
+      }
     }
-}
+  }
+  

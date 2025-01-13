@@ -28,7 +28,7 @@ const HeroSection = () => {
                     <h3>Become a customer</h3>
                     <form>
                         <input 
-                            type="text"
+                            type="email"
                             placeholder="Enter your email address"
                             className="email-input"
                         />

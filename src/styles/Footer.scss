@@ -66,13 +66,17 @@
             outline: none;
             background-color: #D57F47;
             font-size: 1.2rem;
-            color:#1B3B56;
+            color:hsl(0, 0%, 100%);
+
+            &::placeholder {
+                color: #eaeaea;
+            }
         }
 
         button {
             padding:  13.4px 40px;
             background-color: #D57F47;
-            color:#1B3B56;
+            color:#ffffff;
             border: none;
             border-radius: 0 5px 5px 0;
             cursor: pointer;
