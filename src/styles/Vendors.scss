@@ -55,7 +55,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                align-items: flex-start;
+                align-items: center;
                 background-color: #1B3B56;
                 border: 0px solid #ccc;
                 border-radius: 8px;
@@ -65,7 +65,7 @@
                 max-width: 18vw; /* Max width to maintain responsiveness */
                 max-height: 18vw; /* Max height to maintain responsiveness */
                 box-sizing: border-box; /* Include padding and border in size */
-                padding: 20px; /* Add padding for spacing inside the box */
+                padding: 1.0416vw; /* Add padding for spacing inside the box */
 
                 p {
                     font-size: 1.2vw;
@@ -77,15 +77,15 @@
                     background-color: #D57F47;
                     color: #ffffff;
                     border: none;
-                    padding: 12px 23px;
+                    padding: 0.625vw 1.1979vw;
                     border-radius: 20px;
                     font-size: 1vw;
                     font-weight: bold;
                     cursor: pointer;
                     transition: background-color 0.3s ease;
-                    margin-left: 47px;
-                    width: auto;
-                    height: auto;
+                    // margin-left: 2.4479vw;
+                    width: 11.71875vw;
+                    height: 2.8645vw;
 
                     &:hover {
                         background-color: #D85C30;

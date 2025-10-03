@@ -3,16 +3,9 @@ import "../styles/Contact.scss";
 
 const Contact = () => {
     return (
-        <div
+        <div id="contact"
             style={{
                 backgroundImage: "url('/assets/images/contact-us-background.png')",
-                backgroundSize: "cover",
-                backgroundPosition: "center",
-                zIndex: "-1",
-                height: "90vh", // Adjust as needed
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
             }}
         >
             <div className="contact-container">

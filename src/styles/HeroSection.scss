@@ -1,133 +1,199 @@
 #hero-section {
-    // background-image: url('/assets/images/hero-section-background.png');
+    /* If you prefer the background image in SCSS, you can uncomment this line: */
+    /* background-image: url('/assets/images/hero-section-background.png'); */
     background-color: white;
     background-size: cover;
     background-position: center;
     color: #333;
-    height: 330px;
-    // margin-top: 35px;
-    // margin-bottom: -70px;
-
-    .content-container {
-        max-width: 1500px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between; /* Space evenly between the two sections */
-        align-items: center;
-        margin: 0 auto; /* Center the container on the page */
-        padding: 0 0px; /* Add padding on left and right for spacing */
-        padding-top: 45px;
-
-        .motto-action-button {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            max-width: 40%; /* Adjust width for balance */
-            color: #1B3B56;
-
-            h3 {
-                font-size: 18px;
-                font-weight: bold;
-                color: #D57F47;
-                margin-bottom: 10px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                margin-bottom: -20px;
-            }
-
-            h1 {
-                font-size: 48px;
-                font-weight: bold;
-                line-height: 1.2;
-
-                br {
-                    display: none; /* Adjust for mobile if needed */
-                }
-            }
-
-            button {
-                background-color: #D57F47;
-                color: #ffffff;
-                border: none;
-                padding: 15px 30px;
-                border-radius: 50px;
-                font-size: 16px;
-                cursor: pointer;
-                font-weight: bold;
-                max-width: 250px;
-
-                &:hover {
-                    background-color: #D85C30;
-                }
-            }
-        }
-
-        .become-a-customer {
-            display: flex;
-            flex-direction: column;
-            align-items: flex-end;
-            justify-content: right;
-            background-color: rgba(255, 255, 255, 0.0); /* Slightly transparent background */
-            padding: 20px;
-            border-radius: 15px;
-            max-width: 40%; /* Same width as motto section */
-            margin-left: auto; /* Push form to the far right */
-
-            h3 {
-                font-size: 25px;
-                font-weight: bold;
-                color: #1B3B56;
-                margin-bottom: 15px;
-            }
-
-            form {
-                display: flex;
-                align-items: center;
-                width: 100%;
-
-                .email-input {
-                    flex-grow: 1;
-                    height: 25px;
-                    width: 300px;
-                    padding: 10px 15px;
-                    border: 1px solid #D57F47;
-                    border-radius: 8px 0 0 8px; /* Rounded on the left */
-                    outline: none;
-                    font-size: 14px;
-                    background-color: #D57F47;
-                    
-
-                    &:focus {
-                        border-color: #D57F47;
-                        box-shadow: 0 0 5px rgba(213, 127, 71, 0.3);
-                    }
-
-                    &::placeholder {
-                        color: white;
-                    }
-                }
-
-                button {
-                    background-color: #D57F47;
-                    color: #ffffff;
-                    border: none;
-                    padding: 10px 15px;
-                    border-radius: 0 8px 8px 0; /* Rounded on the right */
-                    cursor: pointer;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    height: 47px;
-
-                    svg {
-                        font-size: 16px;
-                    }
-
-                    &:hover {
-                        background-color: #D85C30;
-                    }
-                }
-            }
-        }
+    height: 18vw; /* Keep for large screens; we'll adjust for mobile below */
+  
+    /* ---------- MEDIA QUERY: Mobile / Tablet screens ---------- */
+    @media (max-width: 768px) {
+      height: auto; /* Let height grow as needed on smaller screens */
     }
-}
+  
+    .content-container {
+      max-width: 78.125vw; /* ~1200px if 1vw ~ 15.36px, adjust as needed */
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto; 
+      padding-top: 2.34375vw; /* ~36px if 1vw ~ 15.36px */
+      padding-left: 0;
+      padding-right: 0;
+  
+      /* ---------- MEDIA QUERY: Mobile / Tablet screens ---------- */
+      @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; 
+        padding-top: 4vw;
+      }
+  
+      .motto-action-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 40%;
+        color: #1B3B56;
+  
+        /* ---------- MEDIA QUERY: Mobile / Tablet screens ---------- */
+        @media (max-width: 768px) {
+          max-width: 90%;
+          margin-bottom: 3vw;
+        }
+  
+        h3 {
+          font-size: 1vw;
+          font-weight: bold;
+          color: #D57F47;
+          text-transform: uppercase;
+          letter-spacing: 0.06vw; /* roughly 1px at desktop scale */
+          margin-bottom: -1.3vw; /* ~ -20px if 1vw ~ 15.36px; adjust as needed */
+  
+          @media (max-width: 768px) {
+            font-size: 3vw; 
+            margin-bottom: 1vw; 
+          }
+        }
+  
+        h1 {
+          font-size: 2.5vw;
+          font-weight: bold;
+          line-height: 1.2;
+  
+          br {
+            display: none; 
+          }
+  
+          @media (max-width: 768px) {
+            font-size: 5vw; /* Larger text for mobile */
+          }
+        }
+  
+        button {
+          background-color: #D57F47;
+          color: #fff;
+          border: none;
+          padding: 0.8vw 1.6vw; /* ~12px 24px if 1vw ~ 15px */
+          border-radius: 2vw; 
+          font-size: 1vw;
+          cursor: pointer;
+          font-weight: bold;
+          max-width: 13vw;
+          margin-top: 1vw;
+  
+          &:hover {
+            background-color: #D85C30;
+          }
+  
+          @media (max-width: 768px) {
+            font-size: 3vw;
+            max-width: 60vw;
+            padding: 3vw;
+          }
+        }
+      }
+  
+      .become-a-customer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end; 
+        justify-content: right; 
+        background-color: rgba(255, 255, 255, 0);
+        padding: 1.3vw; /* ~20px */
+        border-radius: 1vw;
+        max-width: 40%;
+        margin-left: auto;
+  
+        /* ---------- MEDIA QUERY: Mobile / Tablet screens ---------- */
+        @media (max-width: 768px) {
+          max-width: 90%;
+          align-items: center;
+        }
+  
+        h3 {
+          font-size: 1.3vw;
+          font-weight: bold;
+          color: #1B3B56;
+          margin-bottom: 1vw; /* ~15px if 1vw ~ 15.36px */
+  
+          @media (max-width: 768px) {
+            font-size: 4vw;
+            margin-bottom: 3vw;
+          }
+        }
+  
+        form {
+          display: flex;
+          align-items: center;
+          width: 100%;
+  
+          @media (max-width: 768px) {
+            flex-direction: row; 
+          }
+  
+          .email-input {
+            flex-grow: 1;
+            // height: 2vw; 
+            width: 15.6vw;
+            padding: 0.65vw 1vw; /* ~10px 15px */
+            border: 0.13vw solid #D57F47; /* ~2px */
+            border-radius: 0.52vw 0 0 0.52vw; /* ~8px corner rounding */
+            outline: none;
+            font-size: 0.85vw; 
+            background-color: #D57F47;
+            color: #fff;
+  
+            &:focus {
+              border-color: #D57F47;
+              box-shadow: 0 0 0.3vw rgba(213, 127, 71, 0.3); /* ~5px */
+            }
+  
+            &::placeholder {
+              color: #fff;
+            }
+  
+            @media (max-width: 768px) {
+              width: 60vw;
+              height: auto;
+              font-size: 3vw;
+            }
+          }
+  
+          button {
+            background-color: #D57F47; /* Match input area background */
+            color: #fff;
+            border: none;
+            padding: 0.65vw 1vw; /* ~10px 15px */
+            border-radius: 0 0.52vw 0.52vw 0; 
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2.5vw;
+  
+            svg {
+              font-size: 0.85vw;
+            }
+  
+            &:hover {
+              background-color: #D85C30;
+            }
+  
+            @media (max-width: 768px) {
+              height: auto;
+              font-size: 3vw;
+              padding: 2vw;
+              
+              svg {
+                font-size: 3vw;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
