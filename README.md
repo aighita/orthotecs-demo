@@ -1,7 +1,12 @@
-<div align='center'>
-    <h1> OrthoTecs </h1>
+<div align="center">
+  <h1>OrthoTecs – Demo Project</h1>
+  <a href="https://orthotecs.de" target="_blank">orthotecs.de</a>
 </div>
 
-This is the demo project for OrthoTecs.
+---
 
-https://demo-orthotecs.pages.dev
+## 📖 Overview
+Demo single-page application for OrthoTecs, built to showcase the platform concept and provide a simple, responsive presentation website.
+
+## 🌐 Live Demo
+🔗 [orthotecs.de](https://orthotecs.de)
